@@ -6,12 +6,17 @@ export const NavLinks = props => {
   console.log(props.linksArray);
 
   return (
-    <ul>
-      {/* {props.linksArray.map(link => (
-        <li key={link.id} className={router.pathname == link.to ? 'active' : ''}>
-          <Link href={link.to}>{link.title}</Link>
+    <ul className='flex h-full items-center'>
+      {props.linksArray.map(link => (
+        <li
+          key={link.id}
+          className={`${router.pathname == link.to ? 'active' : ''} h-full flex items-center px-4 text-offwhite border uppercase`}
+        >
+          <Link href={`${link.to}`}>
+            <a>{link.title}</a>
+          </Link>
         </li>
-      ))} */}
+      ))}
     </ul>
   );
 };

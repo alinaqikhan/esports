@@ -7,6 +7,7 @@ const EsportsLogo = props => {
         viewBox="0 0 102 29"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        {...props}
       >
         <g clipPath="url(#clip0_1386_864)">
           <path

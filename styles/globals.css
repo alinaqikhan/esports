@@ -36,3 +36,11 @@ a {
   height: 26px;
   padding: 5px;
 }
+
+.active {
+  border-bottom-color: #f7c001 !important;
+}
+
+.border {
+  border: 3px solid transparent;
+}

@@ -47,14 +47,14 @@ const Navigation = props => {
         {/* ----- SOCIAL MEDIA ICONS ----- */}
         <SocialMediaIcons />
       </div>
-      <nav className="h-16 md:h-20 px-5 md:px-10 flex items-center justify-between">
+      <nav className="h-16 md:h-20 px-5 md:px-10 lg:px-16 flex items-center justify-between">
         <div className="flex">
-          <IconButton disableRipple className="text-offwhite p-0 pr-4">
+          <IconButton disableRipple className="text-offwhite p-0 pr-4 lg:hidden">
             <MenuIcon />
           </IconButton>
           <EsportsLogo />
         </div>
-        <div className="navlinks hidden lg:block">
+        <div className="navlinks hidden lg:block h-full">
           <NavLinks linksArray={DUMMY_LINKS_ARRAY} />
         </div>
         <Button title={'CONTACT'} />

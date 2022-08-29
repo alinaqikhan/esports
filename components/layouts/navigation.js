@@ -45,7 +45,7 @@ const Navigation = props => {
           <TranslateIcon className="text-offwhite" />
           <p className="pl-1">English</p>
           <IconButton className="text-offwhite">
-            <KeyboardArrowDownIcon />
+            <KeyboardArrowDownIcon className='text-offwhite' />
           </IconButton>
         </div>
         {/* ----- SOCIAL MEDIA ICONS ----- */}
@@ -54,7 +54,7 @@ const Navigation = props => {
       <nav className="h-16 md:h-20 px-5 md:px-10 lg:px-16 flex items-center justify-between">
         <div className="flex">
           <IconButton disableRipple className="text-offwhite p-0 pr-4 lg:hidden">
-            <MenuIcon />
+            <MenuIcon className='menu-icon' />
           </IconButton>
           <EsportsLogo />
         </div>

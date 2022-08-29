@@ -65,6 +65,9 @@ a {
       height: 521px;
       background-size: cover;
     }
+    .menu-icon {
+      display: none !important;
+    }
 }
 
 /* For Tablet View */
@@ -90,6 +93,7 @@ a {
           font-size: 20px;
           font-weight: 500;
         }
+      
 }
 
 .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {

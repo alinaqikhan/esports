@@ -44,3 +44,46 @@ a {
 .border {
   border: 3px solid transparent;
 }
+
+.button-inc-mobile {
+  width: 123px;
+    height: 37px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+  #hero-banner-image {
+      background-image: url("/images/hero-banner-desktop.png");
+      height: 521px;
+      background-size: cover;
+    }
+}
+
+/* For Tablet View */
+@media screen and (max-device-width: 1024px) {
+  #hero-banner-image {
+      background-image: url("/images/hero-banner-tablet.png");
+      height: 521px;
+      background-size: cover;
+    }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  #hero-banner-image {
+      background-image: url("/images/hero-banner-mobile.png");
+      height: 521px;
+      background-size: cover;
+    }
+        .button-inc-mobile {
+          width: 200px;
+          height: 60px;
+          padding: 10px;
+          font-size: 20px;
+          font-weight: 500;
+        }
+}

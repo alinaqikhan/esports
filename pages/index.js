@@ -1,4 +1,4 @@
-import { Navigation } from "../components";
+import { Jumbotron, Navigation } from "../components";
 
 const HomePage = props => {
     return (
@@ -6,6 +6,9 @@ const HomePage = props => {
             <header>
               <Navigation />
             </header>
+            <main>
+                <Jumbotron />
+            </main>
         </>
     );
 };

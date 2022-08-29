@@ -30,3 +30,9 @@ a {
     background: black;
   }
 }
+
+.button {
+  width: 88px;
+  height: 26px;
+  padding: 5px;
+}

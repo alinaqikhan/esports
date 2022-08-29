@@ -45,6 +45,10 @@ a {
   border: 3px solid transparent;
 }
 
+.box {
+  box-shadow: 0 2px 2px -2px gray;
+}
+
 .button-inc-mobile {
   width: 123px;
     height: 37px;
@@ -86,4 +90,8 @@ a {
           font-size: 20px;
           font-weight: 500;
         }
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #d8d8d8 !important;
 }

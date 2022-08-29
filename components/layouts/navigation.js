@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import EsportsLogo from '../icons/esports-logo';
 import Button from '../ui/button';
 import { NavLinks } from '../ui/navlink';
+import { useRouter } from 'next/router';
 
 const DUMMY_LINKS_ARRAY = [
   { id: 1, title: 'Home', submenu: [], to:"/" },
@@ -34,6 +35,9 @@ const DUMMY_LINKS_ARRAY = [
 ];
 
 const Navigation = props => {
+
+  const router = useRouter();
+
   return (
     <div className="bg-navigation">
       <div className="h-11 md:h-14 px-5 md:px-10 lg:px-16 flex items-center justify-between">
@@ -57,7 +61,7 @@ const Navigation = props => {
         <div className="navlinks hidden lg:block h-full">
           <NavLinks linksArray={DUMMY_LINKS_ARRAY} />
         </div>
-        <Button title={'CONTACT'} />
+        <Button title={'CONTACT'} onClick={()=>router.push("/contact")}/>
       </nav>
     </div>
   );
